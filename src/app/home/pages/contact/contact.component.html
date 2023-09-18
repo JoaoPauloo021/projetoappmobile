@@ -1,1 +1,36 @@
-<p>contact works!</p>
+
+
+
+<div class="contato">
+  Entre em contato conosco
+</div>
+
+<div class="container">
+    <h2>Formulário de Contato</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" formControlName="name" placeholder="Digite seu nome" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" placeholder="Digite seu email" />
+      </div>
+      <div class="form-group">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" formControlName="cep" placeholder="Digite o CEP" />
+        <button type="button" (click)="buscarEndereco()">Buscar Endereço</button>
+      </div>
+      <div *ngIf="endereco">
+        <p><strong>CEP:</strong> {{ endereco.cep }}</p>
+        <p><strong>Logradouro:</strong> {{ endereco.logradouro }}</p>
+        <p><strong>Bairro:</strong> {{ endereco.bairro }}</p>
+        <p><strong>Cidade:</strong> {{ endereco.localidade }}</p>
+        <p><strong>Estado:</strong> {{ endereco.uf }}</p>
+      </div>
+      <button type="submit" class="btn btn-primary"  routerLink="/body">Enviar</button>
+    </form>
+</div>
+
+  
+  
