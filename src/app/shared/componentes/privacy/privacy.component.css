@@ -1,18 +1,18 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
 }
-/* Estilos para o cabeçalho */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
-/* Estilos para o conteúdo */
+h1 {
+    font-size: 24px;
+}
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -20,15 +20,6 @@ header {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    font-size: 24px;
-}
 p {
     line-height: 1.6;
-}
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
 }

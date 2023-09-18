@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<body>
+    <div class="error-container">
+        <h1>Erro 404 - Página Não Encontrada</h1>
+        <p>Lamentamos, mas a página que você está procurando não existe.</p>
+        
+        <h2>Relate o erro:</h2>
+        <form action="submit-error.php" method="post">
+            <label for="error-description">Descreva o erro:</label>
+            <textarea id="error-description" name="error-description" rows="4" required></textarea>
+            
+            <button type="submit" routerLink="/body">Enviar Relatório</button>
+        </form>
+    </div>
+</body>
+</html> 
