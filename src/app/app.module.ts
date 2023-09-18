@@ -10,6 +10,11 @@ import { AboutComponent } from './home/pages/about/about.component';
 import { ContactComponent } from './home/pages/contact/contact.component';
 import { IndexComponent } from './componentes/index/index.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PrivacyComponent } from './shared/componentes/privacy/privacy.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NotFoundComponent } from './home/pages/not-found/not-found.component';
+
 
 
 @NgModule({
@@ -21,13 +26,19 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ContactComponent,
     IndexComponent,
+    PrivacyComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
