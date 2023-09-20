@@ -13,9 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projetoappmobile",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref":".",
             "polyfills": [
               "zone.js"
             ],
